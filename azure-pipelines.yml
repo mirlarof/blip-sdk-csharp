@@ -7,9 +7,6 @@ trigger:
 - master
 - main
 
-pool:
-  vmImage: ubuntu-latest
-
 name: 0.1$(Rev:.r)
 
 resources:
