@@ -5,6 +5,7 @@
 
 trigger:
 - master
+- main
 
 name: 0.1$(Rev:.r)
 
@@ -13,7 +14,7 @@ resources:
   - repository: templates
     type: git
     name: Operações/template-take-blip
-    ref: refs/tags/v1.3.5
+    ref: refs/heads/feature/dotnet-nuget-test
 
 extends:
   template: template-pipeline.yml@templates    
@@ -21,4 +22,5 @@ extends:
     packagename: blip-sdk-csharp    
     type: dotnet
     to: nuget
-    nugetServiceConnection: TestNuget 
+    nugetServiceConnection: TestNuget
+    dotnetVersion: "2.2.x"
