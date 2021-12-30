@@ -23,4 +23,4 @@ extends:
     type: dotnet
     to: nuget
     nugetServiceConnection: TestNuget
-    dotnetVersion: "2.1.x"
+    dotnetVersion: "3.1.x"
