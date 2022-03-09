@@ -17,7 +17,7 @@ resources:
   - repository: templates
     type: git
     name: Operações/template-take-blip
-    ref: refs/tags/v1.3.11
+    ref: refs/heads/feature/fix-dotnetNuget
 
 extends:
   template: template-pipeline.yml@templates    
@@ -26,6 +26,7 @@ extends:
     type: dotnet
     to: nuget
     nugetServiceConnection: TestNuget
+    includesymbols: true
     dotnetVersion: "3.1.x"
     testProjects: src/Take.Blip.Client.sln
     testPermission: true
