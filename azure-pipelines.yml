@@ -17,7 +17,7 @@ resources:
   - repository: templates
     type: git
     name: Operações/template-take-blip
-    ref: refs/heads/feature/fix-dotnetNuget
+    ref: refs/heads/feature/test-publishWin
 
 extends:
   template: template-pipeline.yml@templates    
